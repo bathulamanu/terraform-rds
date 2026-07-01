@@ -12,7 +12,7 @@ username = "insta"
 
 password = "Bathula147!"
 
-publicly_accessible = false
+publicly_accessible = true
 
 multi_az = false
 
