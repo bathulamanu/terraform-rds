@@ -37,25 +37,4 @@ databases = {
     allocated_storage = 20
 
   }
-
-  inventory = {
-
-    db_name = "inventory"
-
-    instance_class = "db.t3.small"
-
-    allocated_storage = 20
-
-  }
-
-  customer = {
-
-    db_name = "customer"
-
-    instance_class = "db.t3.micro"
-
-    allocated_storage = 20
-
-  }
-
 }
