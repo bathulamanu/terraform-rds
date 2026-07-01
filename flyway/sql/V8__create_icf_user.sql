@@ -1,0 +1,1 @@
+CREATE USER icf WITH PASSWORD 'StrongPassword123';
