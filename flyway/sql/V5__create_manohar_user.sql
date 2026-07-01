@@ -1,9 +1,16 @@
-CREATE USER manohar WITH PASSWORD 'YourStrongPassword123';
+DO
+$$
+BEGIN
+    IF NOT EXISTS (
+        SELECT FROM pg_roles WHERE rolname = 'manohar'
+    ) THEN
+        CREATE USER manohar WITH PASSWORD 'YourStrongPassword123';
+    END IF;
+END
+$$;
 
 GRANT CONNECT ON DATABASE theinstacloset TO manohar;
-
 GRANT USAGE ON SCHEMA public TO manohar;
-
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON ALL TABLES IN SCHEMA public
 TO manohar;
